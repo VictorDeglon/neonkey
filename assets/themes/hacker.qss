@@ -1,0 +1,19 @@
+/* Hacker theme */
+QWidget {
+    background-color: #000000;
+    color: #39ff14;
+    font-family: "Courier New", monospace;
+}
+QPushButton {
+    background-color: #002b36;
+    border: 1px solid #39ff14;
+    padding: 5px;
+    border-radius: 4px;
+}
+QPushButton:hover {
+    background-color: #003;
+    color: #73ff74;
+}
+QPushButton:pressed {
+    background-color: #001;
+}
