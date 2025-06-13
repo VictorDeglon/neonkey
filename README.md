@@ -16,6 +16,13 @@ pip install -r requirements.txt
 python3 neonkey.py
 ```
 
+For a simple fallback launcher, you can use `run.py` which just invokes the
+main application. To build a Windows executable named `run.exe` run:
+
+```bash
+pyinstaller --onefile run.py
+```
+
 ## Background Watchers
 
 - `USBWatcher.py` launches the console automatically when a NEONKEY USB stick is inserted.
@@ -28,6 +35,7 @@ Use [PyInstaller](https://www.pyinstaller.org/) to create standalone executables
 ```bash
 pyinstaller --onefile USBWatcher.py
 pyinstaller --onefile ThemeWatcher.py
+pyinstaller --onefile run.py
 ```
 
 Copy the generated EXE files onto your NEONKEY USB to run the watchers without needing Python installed.
