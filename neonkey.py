@@ -11,6 +11,7 @@ class InstallDialog(QtWidgets.QDialog):
     def __init__(self):
         super().__init__()
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        self.showFullScreen()
         layout = QtWidgets.QVBoxLayout(self)
         label = QtWidgets.QLabel("Install NEONKEY Console on this machine?")
         label.setAlignment(QtCore.Qt.AlignCenter)
